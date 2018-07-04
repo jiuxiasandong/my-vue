@@ -1,0 +1,86 @@
+$yh:"Microsoft yahei";
+
+
+html {
+   font-size: 62.5%; font-family:$yh;
+   font-size:calc(100vw/6.4);
+   font-size:-webket-calc(100vw/6.4);
+}
+body,h1,h2,h3,h4,h5,h6,blockquote,ol,ul,dl,dd,p,textarea,input,select,option,form {
+    margin:0; padding:0;
+}
+
+@function rem($px){//$px为需要转换的字号
+    @return $px / 100px * 1rem; //100px为根字体大小
+}
+
+body{
+    // background: #f5f4f0;
+    // background: #FAFAFA;
+    // background: #F1F1F1;
+    // background-color: #f6f8fb;
+    -webkit-tap-highlight-color:transparent;
+    // font-size: .24rem;
+    font-size:rem(24px);
+}
+
+ol,ul,textarea,input,option,th,td {
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    // font-weight: normal;
+    font-size:100%;
+}
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+table {
+    border-collapse:collapse;border-spacing: 0;
+}
+ul,ol { 
+    list-style-type:none;
+}
+.clearfix:after {
+    content:'.';display:block;height:0;clear:both;visibility:hidden;
+}
+//.clearfix {*zoom:1;}
+.clear {
+    clear:both;height:0;overflow:hidden;
+}
+
+input[type=text],textarea{
+    -webkit-appearance:none;
+}
+
+input:focus{
+    -webkit-user-modify:read-write-plaintext-only;
+}
+fieldset, img {
+    border: 0;
+}
+img{
+    display: block;
+}
+a {
+    text-decoration:none;
+}
+a,textarea,input{
+    outline:none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+textarea {
+    overflow:auto;resize:none;
+}
+input{
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    background-color: transparent;
+}

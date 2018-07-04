@@ -1,0 +1,91 @@
+.user {
+    padding-top: 50px;
+    .mint-header {
+        background-color: #f5f5f5;
+        color: #00b51d;
+    }
+    .log-header {
+        background-color: transparent;
+    }
+    .mint-cell {
+        // min-height: 38px;
+        border: 1px solid #eee;
+        &:first-child {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        &:nth-child(2) {
+            border-top: none;
+        }
+    }
+    .regpwd {
+        border-bottom: none;
+    }
+    .logpwd {
+        border-bottom: 1px solid #eee;
+    }
+    .mint-field .mint-cell-value {
+        font-size: small;
+    }
+    .mint-button--large {
+        margin-top: 15px;
+        background-color: #228a31;
+        color: #f1f1f1;
+    }
+    .welcome {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: #00b51d;
+    }
+    form {
+        margin: 0 20px;
+        position: relative;
+        .icon-eye2 {
+            position: absolute;
+            right: 30px;
+            top: 66px;
+        }
+    }
+    .notice {
+        padding: 15px;
+        text-align: center;
+        font-size: small;
+        letter-spacing: 2px;
+        color: #aaa;
+    }
+    .pipe {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+        letter-spacing: 2px;
+        .regBtn {
+            flex: 1;
+            text-align: right;
+            color: #00b51d;
+        }
+        .forgetBtn {
+            flex: 1;
+            text-align: left;
+            color: #aaa;
+        }
+    }
+    .space {
+        padding: 0 23px;
+    }
+    .footer {
+        display: flex;
+        padding: 20px;
+        margin-top: 2.56rem;
+        padding: 20px;
+        text-align: center;
+        color: #aaa;
+        .wechat,
+        .blog {
+            flex: 1;
+        }
+    }
+}

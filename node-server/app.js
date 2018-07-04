@@ -8,7 +8,7 @@ var app = express();
 
 var host = "0.0.0.0";
 
-var port = 2000;
+var port = 4000;
 
 app.use(bodyParser.json());    // 接口  http://localhost:7000/login?username=qwer  ajax  req.body 
 app.use(bodyParser.urlencoded({ extended: false })); // form 表单提交 
